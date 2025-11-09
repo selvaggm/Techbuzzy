@@ -37,7 +37,7 @@ function Blog() {
 
   // Fetch data from Google Sheets
   useEffect(() => {
-    const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTmrjToaeNAPEixYDHu8jWh0OUUQFKnMFl0531UC2qUFwcji4h0TWhugNTyBjMQ0WACo0CRJoc6SKpP/pub?output=csv';
+    const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWWm-OR0giR1HD9D1dK7auhoWh_oDI0gYMVg2yObucJ7j6KY6QWBH9yMR1wJJrmS7cKpR5w6Da-8qu/pub?output=csv';
 
     fetch(SHEET_URL)
       .then(response => response.text())
