@@ -15,7 +15,6 @@ function ContactModal({ isOpen, onClose }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Replace with your Web3Forms Access Key
   const ACCESS_KEY = 'e0b3ee77-797e-4ac2-bb47-21b5364a7f70';
 
   const handleChange = (e) => {
@@ -32,7 +31,6 @@ function ContactModal({ isOpen, onClose }) {
     setError('');
 
     try {
-      // Create FormData object for Web3Forms API
       const formDataToSend = new FormData();
       formDataToSend.append('access_key', ACCESS_KEY);
       formDataToSend.append('name', formData.name);
@@ -44,7 +42,6 @@ function ContactModal({ isOpen, onClose }) {
       formDataToSend.append('subject', 'New Contact Form Submission');
       formDataToSend.append('from_name', 'Contact Form');
 
-      // Send to Web3Forms API
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formDataToSend
