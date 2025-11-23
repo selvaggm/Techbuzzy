@@ -11,6 +11,21 @@
   overflow: hidden;
   min-height: 600px;
 }
+.who-we-are {
+  margin-top: 2rem;
+}
+
+.who-we-are h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary-color); /* Or your highlight color */
+}
+
+.who-we-are p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #eee; /* match your text color */
+}
 
 /* Animated shine effect */
 .hero::before {

@@ -9,6 +9,7 @@ import CloudSvg from '../assets/images/cloud.svg';
 import AiSvg from '../assets/images/ai.svg';
 import CyberSvg from '../assets/images/cyber.svg';
 import QaImage from '../assets/images/qa.png';
+import corporate from '../assets/images/meeting.png'
 
 function Services() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -96,6 +97,24 @@ function Services() {
         'Network Design, Configuration & Performance Optimization'
       ],
       tech: ['AWS Security', 'Azure Security', 'Fortinet', 'Palo Alto', 'Splunk']
+    },
+    {
+      id: 6,
+      icon: corporate,
+      type: 'png',
+      iconClass: 'icon-cyber',
+      title: 'Corporate Gifting Solutions:',
+      description: 'Premium, customized corporate gifts for branding, events & employee engagement',
+      features: [
+        'Custom-branded corporate gifts',
+        'Employee onboarding & festival gift hampers',
+        'Premium tech gifts ',
+        'Client appreciation & event gifting',
+        'Bulk order management & doorstep delivery',
+        'Personalized packaging & logo branding',
+        'Exclusive corporate gift curation for special occasions'
+      ],
+      tech: []
     }
   ];
 
@@ -132,12 +151,19 @@ function Services() {
                 ))}
               </ul>
 
-              <div className="tech-label">Tools & Technologies</div>
+             {
+              // eslint-disable-next-line eqeqeq
+              service.id != 6 && service.tech.length > 0 && (
+                <>
+                 <div className="tech-label">Tools & Technologies</div>
               <div className="tech-tags">
                 {service.tech.map((tech, idx) => (
                   <span key={idx} className="tech-tag">{tech}</span>
                 ))}
               </div>
+                </>
+              )
+             }
             </div>
           ))}
         </div>

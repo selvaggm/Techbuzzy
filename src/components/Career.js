@@ -16,14 +16,32 @@ function Career() {
             <div className="benefit-card">
               <div className="benefit-icon">🌍</div>
               <h4>Remote-First Culture</h4>
+              <br></br>
+              <div className = 'contact-item  '>Work from anywhere with flexibility and balance, while staying connected through modern collaboration tools.</div>
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">❤️</div>
               <h4>Health & Wellness</h4>
+              <br></br>
+              <div className = 'contact-item  '>We care about your well-being with supportive policies that promote a healthy mind, body, and work-life balance.</div>
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">📚</div>
-              <h4>Learning & Development</h4>
+              <h4>Career Growth & Skill Development</h4>
+              <br></br>
+              <div className = 'contact-item  '>Gain hands-on experience with real-world projects while continuously upskilling through training, mentorship, and exposure to the latest technologies — all supporting your growth into future leadership roles.</div>
+            </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">📚</div>
+              <h4>Diverse Projects Across Industries</h4>
+              <br></br>
+              <div className = 'contact-item  '>From startups to enterprises, experience working on exciting and challenging projects across multiple domains.</div>
+            </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">📚</div>
+              <h4>Collaborative Environment</h4>
+              <br></br>
+              <div className = 'contact-item  '>Work with a talented team of developers, cloud architects, security engineers, testers, and support experts.</div>
             </div>
           </div>
         </div>
